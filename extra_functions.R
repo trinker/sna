@@ -5,4 +5,7 @@ handy_assign <- function(x){
 }
 
 
-
+zero_diag <- function(x) {
+    diag(x) <- 0
+	x
+}

@@ -53,5 +53,11 @@ grid.arrange(x, y, ncol=2)
 dev.off()
 
 
+pdf("plots/dendrogram.pdf", width=10, height=7)
+    par(mar=c( 5.1, 4.1, 4.1 ,2.1))
+    par(mfrow=c(1,2))
+    dendPlot(hrg.fit(t1)); mtext("Time 1")
+    dendPlot(hrg.fit(t2)); mtext("Time 2")
+dev.off()
 
 
